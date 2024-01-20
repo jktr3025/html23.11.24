@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* .father::before{
+    content: "♣";
+    display: block;
+    border: 1px solid darkcyan;
+}
+.father::after{
+    content: "";
+    display: block;
+    border: 1px sienna solid;
+    height: 10px;
+    background: tan;
+} */
+
+body::before, .grand_father::before, .father::before{
+    content: "☆";
+    float: right;
+    color: blueviolet;
+    margin: 20px;
+}
+body::before{
+    content: "전체창";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.grand_father::before{
+    content: "할아버지";
+}
+.father::before{
+    content: "아버지";
+}
+.father img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.father{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+.box{
+    width: 150px;
+    height: 340px;
+    background: darksalmon;
+    /* transform: scale(1.2, 1.1);
+    transform: scaleX(1.2) scaleY(1.1); */
+    /* transform: rotate(15deg);
+    transform: rotate(-15deg);
+    transform: rotatex(180deg);
+    transform: rotatey(180deg); */
+    /* transform: translate(100px , 0);
+    transform: translate(50% , 0); */
+    transform-origin: left bottom;
+    transform: rotate(15deg);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> max / mini & width height</title>
+    <style type="text/css">
+        html, body{
+            height: 100%;
+        }
+        .box{
+            width: 80%;
+            height: 80%;
+            border: 1px solid darkcyan;
+            margin: 0 auto;
+        }
+        .box img{
+            width: 100%;
+            /* max-width: 800px; */
+            /* 
+            창크기가 작을 때는 부모 넓이 100프로대로 변하지만 
+            창 크기가 커질 때는 이미지의 넓이 800px이후로는 변하지 않음  
+            위드와 미니 위드는 다른 명령어임. 같이 쓸 수 있음
+            */
+            min-width: 600px;
+            height: 100%;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img/백합.jpg" alt="백합">
+    </div>
+</body>
+</html>

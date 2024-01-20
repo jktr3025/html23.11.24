@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            margin: 50px;
+        }
+        .wrap{
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-template-areas: 
+            "header header header"
+            "side1 contents side2"
+            "footer footer footer"
+            ;
+            gap: 15px;
+
+        }
+        .box{
+            background: khaki;
+            color: darkblue;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .side1{
+            grid-area: side1;
+        }
+        .side2{
+            grid-area: side2;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+                    }
+                    ul, ol, li{
+                        list-style: none;
+                    }
+                    .logo{
+                        float: left;
+                    }
+                    .nav{
+                        float: right;
+                    }
+                    .main{
+                        display: grid;
+                        grid-template-columns: repeat(4, 100px);
+                        gap: 10px;
+                    }
+                    .main li{
+                        border: 1px solid darkcyan;
+                        padding: 10px 20px;
+                    }
+                    .main li a{}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="box header">
+            <h1 class="logo"><a href="#">logo</a></h1>
+            <nav class="nav">
+                <ul class="main">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="box side1"> side bar1</aside>
+        <aside class="box side2"> side bar2</aside>
+        <section class="box contents">
+            잘살아보자<br>잘살아보자<br>잘살아보자<br>잘살아보자<br>잘살아보자
+        </section>
+        <footer class="box footer">footer</footer>
+    </div><!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    </style>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: black;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            margin: 30px auto;
+            width: 660px;
+            background: white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(4, 150px);
+            gap: 20px;
+        }
+
+        .box{
+            padding: 15px;
+            border-radius: 25px;
+            /* background: rgba(0, 0, 0, 0.5);
+            border: 1px solid tomato; */
+            color: white;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-family: Nunito;
+            font-weight: bold;
+        }
+
+        .box1 {
+            background: url("img/crepe.png") no-repeat;
+            background-position: center center;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box1:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box2 {
+            background: url("img/cookie.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box2:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box3 {
+            background: url("img/choco.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box3:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box4 {
+            background: url("img/cream.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box4:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box5 {
+            background: url("img/cake.png") no-repeat;
+            background-position: center center;
+            grid-column: 4 / 5;
+            grid-row: 2 / span 3;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box5:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box6 {
+            background: url("img/candy.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box6:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box7 {
+            background: url("img/coke.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box7:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box8 {
+            background: url("img/cheeze.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box8:hover {
+            background-size: 214%;
+            background-position: center center;
+        }
+
+        .box9 {
+            background: url("img/cinnamon.png") no-repeat;
+            background-position: center center;
+            grid-column: 1 / span 2;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box9:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+        .box10 {
+            background: url("img/chili.png") no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            transition: all 0.5s;
+        }
+
+        .box10:hover {
+            background-size: 140%;
+            background-position: center center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="box box1">crepe</div>
+        <div class="box box2">cookie</div>
+        <div class="box box3">choco</div>
+        <div class="box box4">cream</div>
+        <div class="box box5">cake</div>
+        <div class="box box6">candy</div>
+        <div class="box box7">coke</div>
+        <div class="box box8">cheeze</div>
+        <div class="box box9">cinnamon</div>
+        <div class="box box10">cinnamon</div>
+    </div><!-- wrap -->
+
+
+</body>
+
+</html>

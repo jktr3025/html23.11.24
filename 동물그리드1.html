@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background: black;
+        }
+        .wrap{
+            width: 1000px;
+            margin: 100px auto;
+            padding: 20px;
+            border: gray 1px solid;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; 
+        }
+        .box{
+        }
+        img{
+            width: 100%;
+            transition: all 0.5s;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box a"><img src="img/animal01.png" alt="animal01"></div>
+        <div class="box b"><img src="img/animal02.png" alt="animal02"></div>
+        <div class="box c"><img src="img/animal03.png" alt="animal03"></div>
+        <div class="box d"><img src="img/animal04.png" alt="animal04"></div>
+        <div class="box e"><img src="img/animal05.png" alt="animal05"></div>
+        <div class="box f"><img src="img/animal06.png" alt="animal06"></div>
+        <div class="box g"><img src="img/animal07.png" alt="animal07"></div>
+        <div class="box h"><img src="img/animal08.png" alt="animal08"></div>
+        <div class="box i"><img src="img/animal09.png" alt="animal09"></div>
+    </div><!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            margin: 40px;
+        }
+        .wrap{
+            display: grid;
+            /* 나눠질 박스가 아닌 부모가 되는 wrap에 디스플레이:그리드 걸어줌 */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(3, 100px); */
+            /* 1줄에 100px 크기를 가진 박스를 3칸을 만들겠다는 의미
+            1번처럼 각 크기와 몇 칸을 나눌지 직접 써도 되고, 2번처럼 리피트에 칸수와 각 크기를 써줘도 됨  */
+            /* grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            전체 화면을 다 쓸 떄 비율대로 만들어 달라는 의미 */
+            grid-template-columns: 100px 200px auto;
+
+            /* grid-template-rows: 200px 500px; */
+            grid-template-rows: repeat(2,200px);
+
+            /* column-gap: 10px;
+            row-gap: 20px; */
+            gap: 10px 20px ;
+            /* gap: 20px; */
+            /* 마진효과 */
+        }
+        .box{
+            background: skyblue;
+            border-radius: 5px;
+            padding: 20px;
+            color: white;
+            font-size: 150%;
+        }
+        .a{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            /* grid-column: 2 / 3; */
+            grid-row-start: 1;
+            grid-row-end: 2;
+            /* grid-row: 1 /2; */
+            /* A를 B의 자리로 보내고 싶을 때 쓰는 방법
+            3X2의 박스의 줄 수는 3X4줄임 */
+        }
+        .e{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row: 2 / 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div><!-- wrap -->
+</body>
+</html>
